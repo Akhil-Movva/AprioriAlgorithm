@@ -1,4 +1,5 @@
 from itertools import combinations
+from collections import defaultdict
 
 def read_transactions_from_file():
     file=open('basket_data.txt','r')
@@ -7,7 +8,7 @@ def read_transactions_from_file():
     
     transactions=[]
     for transaction in data_set:
-        transactions.append(transaction.strip().split(" "))
+        transactions.append(frozenset(transaction.strip().split(" ")))
     del transactions[0]
     
     #for transaction in transactions[0:5]:
@@ -46,7 +47,7 @@ def apriori_gen(L_itemsets,k):
      #This piece of code comprises the join step, where we join L(K-1) WITH L(k-1)
     for itemset1 in L_itemsets:
         for itemset2 in L_itemsets:
-            if(len(itemset1.union(itemset2))==k):
+            if len(itemset1.union(itemset2))==k:
                 candidate_itemsets.add(itemset1.union(itemset2))
 
     #This piece of code comoprises the prune step, where we delete all itemsets c belonging to C(K) such that some (k-1)
@@ -56,16 +57,32 @@ def apriori_gen(L_itemsets,k):
          
         flag=False
         for i in subsets:
-            
-            if(i not in L_itemsets):
+            if i not in L_itemsets:
                 flag=True
                 break
-        if(flag):
+        if flag:
             candidate_itemsets.remove(i)
               
     return candidate_itemsets
 
- 
+#function to generate large itemsets
+def generate_large_itemsets(C_itemsets,transactions,minsup):
+    large_itemsets=set()
+    itemset_count=defaultdict(int)
+
+    #incrementing the count of the itemset if it is found to be part of the current transaction
+    for itemset in C_itemsets:
+        for transaction in transactions:
+           if itemset.issubset(transaction):
+                itemset_count[itemset]=itemset_count[itemset]+1
+
+    #adding the itemset to the set of large itemsets if its count is greater than or equal to minimum support
+    for itemset in itemset_count:
+        if itemset_count[itemset]>= minsup:
+            large_itemsets.add(itemset)        
+    
+    return large_itemsets
+        
 
 
 
