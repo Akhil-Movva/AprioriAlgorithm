@@ -65,7 +65,7 @@ def apriori_gen(L_itemsets,k):
     return candidate_itemsets
 
 #function to generate large itemsets
-def generate_large_itemsets(C_itemsets,transactions,minsup):
+def generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number):
     large_itemsets=set()
     itemset_count=defaultdict(int)
 
@@ -74,6 +74,7 @@ def generate_large_itemsets(C_itemsets,transactions,minsup):
         for transaction in transactions:
            if itemset.issubset(transaction):
                 itemset_count[itemset]=itemset_count[itemset]+1
+                itemset_number[itemset]=itemset_number[itemset]+1
 
     #adding the itemset to the set of large itemsets if its count is greater than or equal to minimum support
     for itemset in itemset_count:
@@ -89,13 +90,14 @@ def generate_non_empty_subsets(itemset):
         subsets.extend(combinations(itemset,i+1))
     return subsets    
 
-def apriori(minsup):
+def apriori(minsup,minconf):
     transactions=read_transactions_from_file()
 
     large_itemsets_set={}
+    itemset_number=defaultdict(int)
     
     C_itemsets=generate_C1_itemsets(transactions)
-    L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup)
+    L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number)
     
     k=2
     while L_itemsets!=set([]):
@@ -104,7 +106,31 @@ def apriori(minsup):
         L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup)
         k+=1
 
-    return large_itemsets_set    
+    
+    large_itemsets_support={}
+    for itemsets in large_itemsets_set:
+        for itemset in itemsets:
+           large_itemsets_support[itemset]=itemset_number[itemset]/len(transactions) 
+
+
+    association_rules_confidence={}
+    for k,itemsets in list(large_itemsets_set.items())[1:]:
+        for itemset in itemsets:
+            subsets=map(frozenset, [x for x in generate_non_empty_subsets(itemset)])
+            for a in subsets:
+                set_without_a=itemset.difference(a)
+                if len(set_without_a)>0:
+                    support_l=itemset_number[itemset]/len(transactions)
+                    support_a=itemset_number[a]/len(transactions)
+                    confidence=support_l/support_a
+                    if confidence>=minconf:
+                        association_rules_confidence[(a,set_without_a)]=confidence
+
+    return large_itemsets_support, association_rules_confidence
+        
+
+ 
+      
 
 
 
