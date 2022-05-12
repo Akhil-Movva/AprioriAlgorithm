@@ -2,13 +2,13 @@ from itertools import combinations
 from collections import defaultdict
 
 def read_transactions_from_file():
-    file=open('basket_data.txt','r')
+    file=open('groceries.txt','r')
     data_set=file.readlines()
     file.close()
     
     transactions=[]
     for transaction in data_set:
-        transactions.append(frozenset(transaction.strip().split(" ")))
+        transactions.append(frozenset(transaction.strip().split(",")))
     del transactions[0]
     
     #for transaction in transactions[0:5]:
@@ -23,7 +23,6 @@ def generate_C1_itemsets(transactions):
     for transaction in transactions:
         for item in transaction:
             C1_itemsets.add(frozenset([item]))#storing each unique item as a frozenset as a set cannot have nested sets.
-
     return C1_itemsets
 
 #function to generate (k-1) subsets for all itemsets belonging to C(k)
@@ -51,7 +50,8 @@ def apriori_gen(L_itemsets,k):
 
     #This piece of code comoprises the prune step, where we delete all itemsets c belonging to C(K) such that some (k-1)
     #subset of c is not in L(k-1)
-    for itemset in candidate_itemsets:
+    
+    for itemset in candidate_itemsets.copy():
         subsets=generate_subsets(itemset)
          
         flag=False
@@ -60,7 +60,7 @@ def apriori_gen(L_itemsets,k):
                 flag=True
                 break
         if flag:
-            candidate_itemsets.remove(i)
+            candidate_itemsets.remove(itemset)
               
     return candidate_itemsets
 
@@ -78,9 +78,11 @@ def generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number):
 
     #adding the itemset to the set of large itemsets if its count is greater than or equal to minimum support
     for itemset in itemset_count:
-        if itemset_count[itemset]>= minsup:
-            large_itemsets.add(itemset)        
-    
+        support=float(itemset_count[itemset])/len(transactions) 
+        if support>= minsup:
+            large_itemsets.add(itemset)
+                   
+    #print(large_itemsets)
     return large_itemsets
 
 def generate_non_empty_subsets(itemset):
@@ -92,25 +94,27 @@ def generate_non_empty_subsets(itemset):
 
 def apriori(minsup,minconf):
     transactions=read_transactions_from_file()
+    #print(transactions[1:5])
 
     large_itemsets_set={}
     itemset_number=defaultdict(int)
     
     C_itemsets=generate_C1_itemsets(transactions)
     L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number)
-    
+    #print(L_itemsets)
+
     k=2
     while L_itemsets!=set([]):
         large_itemsets_set[k-1]=L_itemsets
         C_itemsets=apriori_gen(L_itemsets,k)
-        L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup)
+        L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number)
         k+=1
-
+    #print(large_itemsets_set)
     
     large_itemsets_support={}
     for itemsets in large_itemsets_set:
-        for itemset in itemsets:
-           large_itemsets_support[itemset]=itemset_number[itemset]/len(transactions) 
+        for itemset in large_itemsets_set[itemsets]:
+           large_itemsets_support[itemset]=float(itemset_number[itemset])/len(transactions)
 
 
     association_rules_confidence={}
@@ -120,15 +124,18 @@ def apriori(minsup,minconf):
             for a in subsets:
                 set_without_a=itemset.difference(a)
                 if len(set_without_a)>0:
-                    support_l=itemset_number[itemset]/len(transactions)
-                    support_a=itemset_number[a]/len(transactions)
+                    support_l=float(itemset_number[itemset])/len(transactions)
+                    support_a=float(itemset_number[a])/len(transactions)
                     confidence=support_l/support_a
                     if confidence>=minconf:
                         association_rules_confidence[(a,set_without_a)]=confidence
 
-    return large_itemsets_support, association_rules_confidence
-        
+    print("The large itemsets are")
+    for itemset in large_itemsets_support:
+        print("itemset: %s support: %.4f\n" % (itemset,large_itemsets_support[itemset]))
 
+
+apriori(0.05,0.6)
  
       
 
