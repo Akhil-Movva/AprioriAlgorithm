@@ -17,9 +17,8 @@ def read_transactions_from_file():
     return transactions
 
 #Function to generate C1 itemsets
-def generate_C1_itemsets():
+def generate_C1_itemsets(transactions):
     C1_itemsets=set()
-    transactions=read_transactions_from_file()
 
     for transaction in transactions:
         for item in transaction:
@@ -82,7 +81,37 @@ def generate_large_itemsets(C_itemsets,transactions,minsup):
             large_itemsets.add(itemset)        
     
     return large_itemsets
-        
+
+def generate_non_empty_subsets(itemset):
+    subsets=[]
+
+    for i,a in enumerate(itemset):
+        subsets.extend(combinations(itemset,i+1))
+    return subsets    
+
+def apriori(minsup):
+    transactions=read_transactions_from_file()
+
+    large_itemsets_set={}
+    
+    C_itemsets=generate_C1_itemsets(transactions)
+    L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup)
+    
+    k=2
+    while L_itemsets!=set([]):
+        large_itemsets_set[k-1]=L_itemsets
+        C_itemsets=apriori_gen(L_itemsets,k)
+        L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup)
+        k+=1
+
+    return large_itemsets_set    
+
+
+
+    
+     
+
+
 
 
 
