@@ -48,7 +48,7 @@ def apriori_gen(L_itemsets,k):
             if len(itemset1.union(itemset2))==k:
                 candidate_itemsets.add(itemset1.union(itemset2))
 
-    #This piece of code comoprises the prune step, where we delete all itemsets c belonging to C(K) such that some (k-1)
+    #This piece of code comprises the prune step, where we delete all itemsets c belonging to C(K) such that some (k-1)
     #subset of c is not in L(k-1)
     
     for itemset in candidate_itemsets.copy():
@@ -85,6 +85,7 @@ def generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number):
     #print(large_itemsets)
     return large_itemsets
 
+#function to generate non-empty subsets for each large itemset. It will be used in the process of generating association rules
 def generate_non_empty_subsets(itemset):
     subsets=[]
 
@@ -92,37 +93,43 @@ def generate_non_empty_subsets(itemset):
         subsets.extend(combinations(itemset,i+1))
     return subsets    
 
+#This is the implementation of the apriori algorithm that generates large itemsets and association rules
 def apriori(minsup,minconf):
     transactions=read_transactions_from_file()
     #print(transactions[1:5])
 
-    large_itemsets_set={}
-    itemset_number=defaultdict(int)
+    large_itemsets_set={}#dictionary that is used to store large itemsets as they are generated
+    itemset_number=defaultdict(int)#dictionary to store itemsets and their counts
     
-    C_itemsets=generate_C1_itemsets(transactions)
-    L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number)
+    C_itemsets=generate_C1_itemsets(transactions)#generating candidate 1-itemsets
+    L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number)#generating large 1-itemsets
     #print(L_itemsets)
 
     k=2
+
+    #running the loop until a certain L(K-1) produced has no elements
     while L_itemsets!=set([]):
         large_itemsets_set[k-1]=L_itemsets
-        C_itemsets=apriori_gen(L_itemsets,k)
-        L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number)
+        C_itemsets=apriori_gen(L_itemsets,k)#calling apriori_gen to produce potentially large itemsets
+        L_itemsets=generate_large_itemsets(C_itemsets,transactions,minsup,itemset_number)#generating large itemsets
         k+=1
     #print(large_itemsets_set)
     
-    large_itemsets_support={}
+    large_itemsets_support={}#dictionary to store large itemsets and their corresponding support
+    #determining support for each large itemset
     for itemsets in large_itemsets_set:
         for itemset in large_itemsets_set[itemsets]:
            large_itemsets_support[itemset]=float(itemset_number[itemset])/len(transactions)
 
-
-    association_rules_confidence={}
+    
+    association_rules_confidence={}#dictionary to store association rules and their corresponding confidence
+    #generating association rules and determing their corresponding confidence
     for k,itemsets in list(large_itemsets_set.items())[1:]:
         for itemset in itemsets:
+            #generating non-empty subsets for each large itemset
             subsets=map(frozenset, [x for x in generate_non_empty_subsets(itemset)])
             for a in subsets:
-                set_without_a=itemset.difference(a)
+                set_without_a=itemset.difference(a) #generating l-a for each subset a
                 if len(set_without_a)>0:
                     support_l=float(itemset_number[itemset])/len(transactions)
                     support_a=float(itemset_number[a])/len(transactions)
@@ -130,7 +137,8 @@ def apriori(minsup,minconf):
                     if confidence>=minconf:
                         association_rules_confidence[(a,set_without_a)]=confidence
 
-    print("The large itemsets are")
+    #printing each large itemset and its support
+    print("The large itemsets are:")
     for itemset in large_itemsets_support:
         print("itemset: %s support: %.4f\n" % (itemset,large_itemsets_support[itemset]))
 
