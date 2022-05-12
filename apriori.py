@@ -140,10 +140,14 @@ def apriori(minsup,minconf):
     #printing each large itemset and its support
     print("The large itemsets are:")
     for itemset in large_itemsets_support:
-        print("itemset: %s support: %.4f\n" % (itemset,large_itemsets_support[itemset]))
+        print("%s support: %.4f\n" % (str(itemset),large_itemsets_support[itemset]))
 
-
-apriori(0.05,0.6)
+    #printing each association rule and its confidence
+    print("The association rules are:")
+    for rule in association_rules_confidence:
+        (antecedent,consequent)=rule
+        print("%s --> %s confidence: %.4f"% (str(antecedent),str(consequent),association_rules_confidence[rule]))
+apriori(0.01,0.2)
  
       
 
