@@ -124,29 +124,34 @@ def apriori(minsup,minconf):
     
     association_rules_confidence={}#dictionary to store association rules and their corresponding confidence
     #generating association rules and determing their corresponding confidence
-    for k,itemsets in list(large_itemsets_set.items())[1:]:
-        for itemset in itemsets:
+    #for k,itemsets in list(large_itemsets_set.items())[1:]:
+    for k in large_itemsets_set:
+        if k!=1:
+            for itemset in large_itemsets_set[k]:
             #generating non-empty subsets for each large itemset
-            subsets=map(frozenset, [x for x in generate_non_empty_subsets(itemset)])
-            for a in subsets:
-                set_without_a=itemset.difference(a) #generating l-a for each subset a
-                if len(set_without_a)>0:
-                    support_l=float(itemset_number[itemset])/len(transactions)
-                    support_a=float(itemset_number[a])/len(transactions)
-                    confidence=support_l/support_a
-                    if confidence>=minconf:
-                        association_rules_confidence[(a,set_without_a)]=confidence
+                subsets=[]
+                s=generate_non_empty_subsets(itemset)
+                for subset in s:
+                    subsets.append(frozenset(subset))
+                for a in subsets:
+                    set_without_a=itemset.difference(a) #generating l-a for each subset a
+                    if len(set_without_a)>0:
+                        support_l=float(itemset_number[itemset])/len(transactions)
+                        support_a=float(itemset_number[a])/len(transactions)
+                        confidence=support_l/support_a
+                        if confidence>=minconf:
+                            association_rules_confidence[(a,set_without_a)]=confidence
 
     #printing each large itemset and its support
-    print("The large itemsets are:")
+    print("The large itemsets are:\n")
     for itemset in large_itemsets_support:
         print("%s support: %.4f\n" % (str(itemset),large_itemsets_support[itemset]))
 
     #printing each association rule and its confidence
-    print("The association rules are:")
+    print("The association rules are:\n")
     for rule in association_rules_confidence:
         (antecedent,consequent)=rule
-        print("%s --> %s confidence: %.4f"% (str(antecedent),str(consequent),association_rules_confidence[rule]))
+        print("%s --> %s confidence: %.4f\n"% (str(antecedent),str(consequent),association_rules_confidence[rule]))
 apriori(0.01,0.2)
  
       
