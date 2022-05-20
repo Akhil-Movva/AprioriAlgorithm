@@ -1,8 +1,8 @@
 from itertools import combinations
 from collections import defaultdict
 
-def read_transactions_from_file():
-    file=open('groceries.txt','r')
+def read_transactions_from_file(filename):
+    file=open(filename,'r')
     data_set=file.readlines()
     file.close()
     
@@ -94,8 +94,8 @@ def generate_non_empty_subsets(itemset):
     return subsets    
 
 #This is the implementation of the apriori algorithm that generates large itemsets and association rules
-def apriori(minsup,minconf):
-    transactions=read_transactions_from_file()
+def apriori(filename,minsup,minconf):
+    transactions=read_transactions_from_file(filename)
     #print(transactions[1:5])
 
     large_itemsets_set={}#dictionary that is used to store large itemsets as they are generated
@@ -152,8 +152,25 @@ def apriori(minsup,minconf):
     for rule in association_rules_confidence:
         (antecedent,consequent)=rule
         print("%s --> %s confidence: %.4f\n"% (str(antecedent),str(consequent),association_rules_confidence[rule]))
-apriori(0.01,0.2)
- 
+
+while True:
+    msup=float(input("Enter the desired minimum support\n"))
+    if not (msup > 0 and msup <=1):
+        print("please enter valid minimum support\n")
+        continue
+    else:
+        break     
+
+while True:
+    mconf=float(input("Enter the desired minimum confidence\n"))
+    if not (mconf > 0 and mconf<=1):
+        print("please enter valid minimum confidence\n")
+        continue
+    else:
+        break
+     
+apriori("groceries.txt",msup,mconf)
+
       
 
 
