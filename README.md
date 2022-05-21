@@ -69,9 +69,12 @@ This project implements the apriori algorithm from the paper:
 
          
   ## References
-  1. https://github.com/stedy/Machine-Learning-with-R-datasets/blob/master/groceries.csv
+  1. https://github.com/stedy/Machine-Learning-with-R-datasets/blob/master/groceries.csv(dataset)
   2. http://www.vldb.org/conf/1994/P487.PDF
-  3. 
+  3. https://github.com/asaini/Apriori
+
+
+
 
 
 
