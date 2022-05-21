@@ -1,0 +1,909 @@
+Enter the desired minimum support
+0.01
+Enter the desired minimum confidence
+0.2
+The large itemsets are:
+
+frozenset(['pot plants']) support: 0.0173
+
+frozenset(['tropical fruit', 'sausage']) support: 0.0139
+
+frozenset(['pork', 'root vegetables']) support: 0.0136
+
+frozenset(['pork', 'other vegetables']) support: 0.0217
+
+frozenset(['yogurt', 'whipped/sour cream']) support: 0.0207
+
+frozenset(['beef']) support: 0.0525
+
+frozenset(['whole milk', 'whipped/sour cream']) support: 0.0322
+
+frozenset(['other vegetables', 'napkins']) support: 0.0144
+
+frozenset(['whole milk', 'frozen vegetables']) support: 0.0204
+
+frozenset(['shopping bags', 'bottled water']) support: 0.0110
+
+frozenset(['rolls/buns']) support: 0.1839
+
+frozenset(['brown bread', 'soda']) support: 0.0126
+
+frozenset(['yogurt', 'frankfurter']) support: 0.0112
+
+frozenset(['rolls/buns', 'soda']) support: 0.0383
+
+frozenset(['yogurt', 'frozen vegetables']) support: 0.0124
+
+frozenset(['frankfurter', 'soda']) support: 0.0113
+
+frozenset(['whole milk', 'dessert']) support: 0.0137
+
+frozenset(['whole milk', 'bottled beer']) support: 0.0204
+
+frozenset(['cling film/bags']) support: 0.0114
+
+frozenset(['spread cheese']) support: 0.0112
+
+frozenset(['yogurt', 'cream cheese ']) support: 0.0121
+
+frozenset(['margarine', 'rolls/buns']) support: 0.0147
+
+frozenset(['tropical fruit', 'domestic eggs']) support: 0.0114
+
+frozenset(['citrus fruit', 'domestic eggs']) support: 0.0104
+
+frozenset(['liquor']) support: 0.0111
+
+frozenset(['sausage', 'pastry']) support: 0.0125
+
+frozenset(['cream cheese ', 'other vegetables']) support: 0.0131
+
+frozenset(['rolls/buns', 'shopping bags']) support: 0.0195
+
+frozenset(['other vegetables', 'frankfurter']) support: 0.0165
+
+frozenset(['yogurt', 'curd']) support: 0.0173
+
+frozenset(['whole milk', 'butter']) support: 0.0276
+
+frozenset(['flower (seeds)']) support: 0.0104
+
+frozenset(['white bread']) support: 0.0421
+
+frozenset(['whole milk', 'hamburger meat']) support: 0.0147
+
+frozenset(['tropical fruit', 'whipped/sour cream']) support: 0.0138
+
+frozenset(['flour']) support: 0.0174
+
+frozenset(['pork']) support: 0.0577
+
+frozenset(['canned beer', 'rolls/buns']) support: 0.0113
+
+frozenset(['soda', 'root vegetables']) support: 0.0186
+
+frozenset(['whole milk', 'beef']) support: 0.0213
+
+frozenset(['whipped/sour cream']) support: 0.0717
+
+frozenset(['hamburger meat', 'other vegetables']) support: 0.0138
+
+frozenset(['yogurt', 'citrus fruit']) support: 0.0217
+
+frozenset(['coffee', 'other vegetables']) support: 0.0134
+
+frozenset(['white bread', 'soda']) support: 0.0103
+
+frozenset(['yogurt', 'beef']) support: 0.0117
+
+frozenset(['tropical fruit', 'bottled water']) support: 0.0185
+
+frozenset(['yogurt', 'margarine']) support: 0.0142
+
+frozenset(['other vegetables', 'shopping bags']) support: 0.0232
+
+frozenset(['fruit/vegetable juice']) support: 0.0723
+
+frozenset(['yogurt', 'pastry']) support: 0.0177
+
+frozenset(['frozen vegetables', 'rolls/buns']) support: 0.0102
+
+frozenset(['newspapers', 'soda']) support: 0.0146
+
+frozenset(['grapes']) support: 0.0224
+
+frozenset(['margarine', 'other vegetables']) support: 0.0197
+
+frozenset(['cream cheese ']) support: 0.0372
+
+frozenset(['other vegetables', 'pastry']) support: 0.0226
+
+frozenset(['chicken', 'other vegetables']) support: 0.0179
+
+frozenset(['dessert']) support: 0.0371
+
+frozenset(['whole milk', 'waffles']) support: 0.0127
+
+frozenset(['canned beer', 'shopping bags']) support: 0.0114
+
+frozenset(['brown bread']) support: 0.0649
+
+frozenset(['pip fruit', 'rolls/buns']) support: 0.0139
+
+frozenset(['processed cheese']) support: 0.0166
+
+frozenset(['yogurt', 'root vegetables']) support: 0.0258
+
+frozenset(['whole milk', 'margarine']) support: 0.0242
+
+frozenset(['sugar']) support: 0.0339
+
+frozenset(['other vegetables', 'frozen vegetables']) support: 0.0178
+
+frozenset(['whole milk', 'napkins']) support: 0.0197
+
+frozenset(['sausage', 'soda']) support: 0.0243
+
+frozenset(['other vegetables', 'berries']) support: 0.0103
+
+frozenset(['whole milk', 'pork']) support: 0.0222
+
+frozenset(['canned vegetables']) support: 0.0108
+
+frozenset(['citrus fruit', 'fruit/vegetable juice']) support: 0.0104
+
+frozenset(['sliced cheese']) support: 0.0245
+
+frozenset(['tropical fruit', 'brown bread']) support: 0.0107
+
+frozenset(['coffee']) support: 0.0581
+
+frozenset(['pip fruit', 'soda']) support: 0.0133
+
+frozenset(['pastry', 'soda']) support: 0.0210
+
+frozenset(['yogurt', 'shopping bags']) support: 0.0153
+
+frozenset(['soft cheese']) support: 0.0171
+
+frozenset(['other vegetables', 'butter milk']) support: 0.0104
+
+frozenset(['domestic eggs', 'soda']) support: 0.0124
+
+frozenset(['other vegetables', 'fruit/vegetable juice']) support: 0.0210
+
+frozenset(['sausage', 'bottled water']) support: 0.0120
+
+frozenset(['chocolate']) support: 0.0496
+
+frozenset(['citrus fruit', 'other vegetables']) support: 0.0289
+
+frozenset(['beverages']) support: 0.0260
+
+frozenset(['margarine']) support: 0.0586
+
+frozenset(['yogurt', 'fruit/vegetable juice']) support: 0.0187
+
+frozenset(['pastry']) support: 0.0890
+
+frozenset(['chicken']) support: 0.0429
+
+frozenset(['rolls/buns', 'napkins']) support: 0.0117
+
+frozenset(['napkins', 'soda']) support: 0.0120
+
+frozenset(['citrus fruit', 'sausage']) support: 0.0113
+
+frozenset(['other vegetables', 'rolls/buns']) support: 0.0426
+
+frozenset(['yogurt', 'sausage']) support: 0.0196
+
+frozenset(['yogurt', 'berries']) support: 0.0106
+
+frozenset(['yogurt']) support: 0.1395
+
+frozenset(['frozen dessert']) support: 0.0108
+
+frozenset(['newspapers', 'bottled water']) support: 0.0113
+
+frozenset(['citrus fruit', 'bottled water']) support: 0.0135
+
+frozenset(['pip fruit', 'pastry']) support: 0.0107
+
+frozenset(['yogurt', 'rolls/buns']) support: 0.0344
+
+frozenset(['sausage', 'other vegetables']) support: 0.0269
+
+frozenset(['yogurt', 'soda']) support: 0.0274
+
+frozenset(['other vegetables', 'root vegetables']) support: 0.0474
+
+frozenset(['rolls/buns', 'pastry']) support: 0.0209
+
+frozenset(['canned fish']) support: 0.0150
+
+frozenset(['whole milk', 'brown bread']) support: 0.0252
+
+frozenset(['shopping bags', 'fruit/vegetable juice']) support: 0.0107
+
+frozenset(['pip fruit', 'tropical fruit']) support: 0.0204
+
+frozenset(['whole milk', 'hygiene articles']) support: 0.0128
+
+frozenset(['white wine']) support: 0.0190
+
+frozenset(['whole milk', 'hard cheese']) support: 0.0101
+
+frozenset(['UHT-milk']) support: 0.0335
+
+frozenset(['soda', 'fruit/vegetable juice']) support: 0.0184
+
+frozenset(['whole milk', 'chocolate']) support: 0.0167
+
+frozenset(['whole milk', 'shopping bags']) support: 0.0245
+
+frozenset(['ham']) support: 0.0260
+
+frozenset(['condensed milk']) support: 0.0103
+
+frozenset(['other vegetables', 'onions']) support: 0.0142
+
+frozenset(['frozen meals']) support: 0.0284
+
+frozenset(['tropical fruit', 'other vegetables']) support: 0.0359
+
+frozenset(['root vegetables', 'whipped/sour cream']) support: 0.0171
+
+frozenset(['other vegetables', 'brown bread']) support: 0.0187
+
+frozenset(['tropical fruit', 'newspapers']) support: 0.0118
+
+frozenset(['sausage', 'rolls/buns']) support: 0.0306
+
+frozenset(['yogurt', 'other vegetables']) support: 0.0434
+
+frozenset(['sausage', 'brown bread']) support: 0.0107
+
+frozenset(['other vegetables', 'whipped/sour cream']) support: 0.0289
+
+frozenset(['whole milk', 'curd']) support: 0.0261
+
+frozenset(['sausage', 'root vegetables']) support: 0.0149
+
+frozenset(['sausage']) support: 0.0940
+
+frozenset(['berries']) support: 0.0332
+
+frozenset(['frankfurter', 'root vegetables']) support: 0.0102
+
+frozenset(['frozen vegetables', 'root vegetables']) support: 0.0116
+
+frozenset(['root vegetables']) support: 0.1090
+
+frozenset(['waffles']) support: 0.0384
+
+frozenset(['rolls/buns', 'domestic eggs']) support: 0.0157
+
+frozenset(['shopping bags', 'root vegetables']) support: 0.0128
+
+frozenset(['pip fruit', 'citrus fruit']) support: 0.0138
+
+frozenset(['tropical fruit', 'shopping bags']) support: 0.0135
+
+frozenset(['hard cheese']) support: 0.0245
+
+frozenset(['pip fruit', 'root vegetables']) support: 0.0156
+
+frozenset(['soda', 'chocolate']) support: 0.0135
+
+frozenset(['newspapers', 'root vegetables']) support: 0.0115
+
+frozenset(['rolls/buns', 'bottled water']) support: 0.0242
+
+frozenset(['other vegetables', 'bottled beer']) support: 0.0162
+
+frozenset(['rolls/buns', 'bottled beer']) support: 0.0136
+
+frozenset(['hygiene articles']) support: 0.0329
+
+frozenset(['frozen fish']) support: 0.0117
+
+frozenset(['citrus fruit', 'whipped/sour cream']) support: 0.0109
+
+frozenset(['other vegetables', 'bottled water']) support: 0.0248
+
+frozenset(['whole milk', 'sliced cheese']) support: 0.0108
+
+frozenset(['pip fruit']) support: 0.0756
+
+frozenset(['canned beer']) support: 0.0777
+
+frozenset(['salt']) support: 0.0108
+
+frozenset(['sausage', 'shopping bags']) support: 0.0157
+
+frozenset(['pork', 'soda']) support: 0.0119
+
+frozenset(['chewing gum']) support: 0.0210
+
+frozenset(['other vegetables']) support: 0.1935
+
+frozenset(['butter', 'other vegetables']) support: 0.0200
+
+frozenset(['whole milk', 'root vegetables']) support: 0.0489
+
+frozenset(['yogurt', 'domestic eggs']) support: 0.0143
+
+frozenset(['butter milk']) support: 0.0280
+
+frozenset(['whole milk', 'pastry']) support: 0.0332
+
+frozenset(['whole milk', 'chicken']) support: 0.0176
+
+frozenset(['tropical fruit', 'citrus fruit']) support: 0.0199
+
+frozenset(['other vegetables', 'chocolate']) support: 0.0127
+
+frozenset(['pastry', 'root vegetables']) support: 0.0110
+
+frozenset(['curd', 'rolls/buns']) support: 0.0101
+
+frozenset(['whole milk', 'citrus fruit']) support: 0.0305
+
+frozenset(['tropical fruit', 'fruit/vegetable juice']) support: 0.0137
+
+frozenset(['sausage', 'fruit/vegetable juice']) support: 0.0101
+
+frozenset(['chicken', 'root vegetables']) support: 0.0109
+
+frozenset(['whole milk', 'onions']) support: 0.0121
+
+frozenset(['whole milk', 'oil']) support: 0.0113
+
+frozenset(['soda']) support: 0.1744
+
+frozenset(['seasonal products']) support: 0.0142
+
+frozenset(['yogurt', 'napkins']) support: 0.0123
+
+frozenset(['tropical fruit']) support: 0.1049
+
+frozenset(['shopping bags', 'pastry']) support: 0.0119
+
+frozenset(['whole milk', 'coffee']) support: 0.0187
+
+frozenset(['margarine', 'root vegetables']) support: 0.0111
+
+frozenset(['margarine', 'bottled water']) support: 0.0103
+
+frozenset(['pip fruit', 'sausage']) support: 0.0108
+
+frozenset(['cat food']) support: 0.0233
+
+frozenset(['butter', 'rolls/buns']) support: 0.0134
+
+frozenset(['salty snack']) support: 0.0378
+
+frozenset(['specialty chocolate']) support: 0.0304
+
+frozenset(['whole milk', 'newspapers']) support: 0.0274
+
+frozenset(['bottled water']) support: 0.1105
+
+frozenset(['tropical fruit', 'pastry']) support: 0.0132
+
+frozenset(['cake bar']) support: 0.0132
+
+frozenset(['shopping bags', 'soda']) support: 0.0246
+
+frozenset(['bottled beer', 'soda']) support: 0.0170
+
+frozenset(['whole milk', 'cream cheese ']) support: 0.0159
+
+frozenset(['other vegetables', 'curd']) support: 0.0172
+
+frozenset(['domestic eggs']) support: 0.0634
+
+frozenset(['rolls/buns', 'chocolate']) support: 0.0118
+
+frozenset(['bottled water', 'soda']) support: 0.0290
+
+frozenset(['root vegetables', 'fruit/vegetable juice']) support: 0.0120
+
+frozenset(['curd', 'root vegetables']) support: 0.0109
+
+frozenset(['whole milk', 'butter milk']) support: 0.0116
+
+frozenset(['mustard']) support: 0.0120
+
+frozenset(['bottled water', 'bottled beer']) support: 0.0158
+
+frozenset(['whole milk', 'berries']) support: 0.0118
+
+frozenset(['whole milk']) support: 0.2555
+
+frozenset(['other vegetables', 'soda']) support: 0.0327
+
+frozenset(['coffee', 'rolls/buns']) support: 0.0110
+
+frozenset(['pip fruit', 'bottled water']) support: 0.0106
+
+frozenset(['soda', 'whipped/sour cream']) support: 0.0116
+
+frozenset(['whole milk', 'long life bakery product']) support: 0.0135
+
+frozenset(['brown bread', 'root vegetables']) support: 0.0102
+
+frozenset(['long life bakery product', 'other vegetables']) support: 0.0107
+
+frozenset(['whole milk', 'white bread']) support: 0.0171
+
+frozenset(['pork', 'rolls/buns']) support: 0.0113
+
+frozenset(['rolls/buns', 'frankfurter']) support: 0.0192
+
+frozenset(['napkins']) support: 0.0524
+
+frozenset(['yogurt', 'tropical fruit']) support: 0.0293
+
+frozenset(['butter', 'whipped/sour cream']) support: 0.0102
+
+frozenset(['whole milk', 'soda']) support: 0.0401
+
+frozenset(['beef', 'root vegetables']) support: 0.0174
+
+frozenset(['bottled water', 'fruit/vegetable juice']) support: 0.0142
+
+frozenset(['oil']) support: 0.0281
+
+frozenset(['whole milk', 'frankfurter']) support: 0.0205
+
+frozenset(['meat']) support: 0.0258
+
+frozenset(['newspapers']) support: 0.0798
+
+frozenset(['butter']) support: 0.0554
+
+frozenset(['detergent']) support: 0.0192
+
+frozenset(['dishes']) support: 0.0176
+
+frozenset(['citrus fruit', 'soda']) support: 0.0128
+
+frozenset(['yogurt', 'bottled water']) support: 0.0230
+
+frozenset(['newspapers', 'rolls/buns']) support: 0.0197
+
+frozenset(['citrus fruit', 'root vegetables']) support: 0.0177
+
+frozenset(['other vegetables', 'domestic eggs']) support: 0.0223
+
+frozenset(['bottled beer']) support: 0.0805
+
+frozenset(['whole milk', 'bottled water']) support: 0.0344
+
+frozenset(['other vegetables', 'newspapers']) support: 0.0193
+
+frozenset(['whole milk', 'other vegetables']) support: 0.0748
+
+frozenset(['rolls/buns', 'root vegetables']) support: 0.0243
+
+frozenset(['rolls/buns', 'beef']) support: 0.0136
+
+frozenset(['yogurt', 'whole milk']) support: 0.0560
+
+frozenset(['herbs']) support: 0.0163
+
+frozenset(['pip fruit', 'other vegetables']) support: 0.0261
+
+frozenset(['onions']) support: 0.0310
+
+frozenset(['rolls/buns', 'brown bread']) support: 0.0126
+
+frozenset(['tropical fruit', 'rolls/buns']) support: 0.0246
+
+frozenset(['hamburger meat']) support: 0.0332
+
+frozenset(['tropical fruit', 'whole milk']) support: 0.0423
+
+frozenset(['candy']) support: 0.0299
+
+frozenset(['baking powder']) support: 0.0177
+
+frozenset(['tropical fruit', 'soda']) support: 0.0208
+
+frozenset(['pip fruit', 'whole milk']) support: 0.0301
+
+frozenset(['shopping bags']) support: 0.0985
+
+frozenset(['margarine', 'soda']) support: 0.0102
+
+frozenset(['pasta']) support: 0.0150
+
+frozenset(['ice cream']) support: 0.0250
+
+frozenset(['whole milk', 'ham']) support: 0.0115
+
+frozenset(['yogurt', 'newspapers']) support: 0.0154
+
+frozenset(['misc. beverages']) support: 0.0284
+
+frozenset(['yogurt', 'butter']) support: 0.0146
+
+frozenset(['dessert', 'other vegetables']) support: 0.0116
+
+frozenset(['packaged fruit/vegetables']) support: 0.0130
+
+frozenset(['salty snack', 'other vegetables']) support: 0.0108
+
+frozenset(['rolls/buns', 'whipped/sour cream']) support: 0.0146
+
+frozenset(['sausage', 'frankfurter']) support: 0.0101
+
+frozenset(['frankfurter']) support: 0.0590
+
+frozenset(['other vegetables', 'beef']) support: 0.0197
+
+frozenset(['yogurt', 'brown bread']) support: 0.0145
+
+frozenset(['whole milk', 'sausage']) support: 0.0299
+
+frozenset(['frozen vegetables']) support: 0.0481
+
+frozenset(['butter', 'root vegetables']) support: 0.0129
+
+frozenset(['canned beer', 'soda']) support: 0.0138
+
+frozenset(['curd', 'whipped/sour cream']) support: 0.0105
+
+frozenset(['whole milk', 'rolls/buns']) support: 0.0566
+
+frozenset(['red/blush wine']) support: 0.0192
+
+frozenset(['whole milk', 'fruit/vegetable juice']) support: 0.0266
+
+frozenset(['tropical fruit', 'napkins']) support: 0.0101
+
+frozenset(['bottled water', 'root vegetables']) support: 0.0157
+
+frozenset(['whole milk', 'sugar']) support: 0.0150
+
+frozenset(['yogurt', 'pip fruit']) support: 0.0180
+
+frozenset(['domestic eggs', 'root vegetables']) support: 0.0143
+
+frozenset(['whole milk', 'domestic eggs']) support: 0.0300
+
+frozenset(['specialty bar']) support: 0.0274
+
+frozenset(['pickled vegetables']) support: 0.0179
+
+frozenset(['long life bakery product']) support: 0.0374
+
+frozenset(['curd']) support: 0.0533
+
+frozenset(['citrus fruit', 'rolls/buns']) support: 0.0168
+
+frozenset(['dish cleaner']) support: 0.0105
+
+frozenset(['rolls/buns', 'fruit/vegetable juice']) support: 0.0145
+
+frozenset(['other vegetables', 'waffles']) support: 0.0101
+
+frozenset(['tropical fruit', 'curd']) support: 0.0103
+
+frozenset(['citrus fruit']) support: 0.0828
+
+frozenset(['tropical fruit', 'root vegetables']) support: 0.0210
+
+frozenset(['semi-finished bread']) support: 0.0177
+
+frozenset(['other vegetables', 'sugar']) support: 0.0108
+
+frozenset(['white bread', 'other vegetables']) support: 0.0137
+
+frozenset(['salty snack', 'whole milk']) support: 0.0112
+
+The association rules are:
+
+frozenset(['citrus fruit']) --> frozenset(['other vegetables']) confidence: 0.3489
+
+frozenset(['curd']) --> frozenset(['other vegetables']) confidence: 0.3225
+
+frozenset(['root vegetables']) --> frozenset(['whole milk']) confidence: 0.4487
+
+frozenset(['salty snack']) --> frozenset(['whole milk']) confidence: 0.2957
+
+frozenset(['brown bread']) --> frozenset(['other vegetables']) confidence: 0.2884
+
+frozenset(['frozen vegetables']) --> frozenset(['yogurt']) confidence: 0.2579
+
+frozenset(['whipped/sour cream']) --> frozenset(['rolls/buns']) confidence: 0.2043
+
+frozenset(['sausage']) --> frozenset(['other vegetables']) confidence: 0.2868
+
+frozenset(['beef']) --> frozenset(['root vegetables']) confidence: 0.3314
+
+frozenset(['beef']) --> frozenset(['whole milk']) confidence: 0.4050
+
+frozenset(['beef']) --> frozenset(['other vegetables']) confidence: 0.3760
+
+frozenset(['whole milk']) --> frozenset(['rolls/buns']) confidence: 0.2216
+
+frozenset(['newspapers']) --> frozenset(['other vegetables']) confidence: 0.2420
+
+frozenset(['pork']) --> frozenset(['soda']) confidence: 0.2063
+
+frozenset(['butter']) --> frozenset(['whole milk']) confidence: 0.4972
+
+frozenset(['other vegetables']) --> frozenset(['root vegetables']) confidence: 0.2449
+
+frozenset(['white bread']) --> frozenset(['other vegetables']) confidence: 0.3261
+
+frozenset(['napkins']) --> frozenset(['rolls/buns']) confidence: 0.2233
+
+frozenset(['other vegetables']) --> frozenset(['rolls/buns']) confidence: 0.2202
+
+frozenset(['soda']) --> frozenset(['rolls/buns']) confidence: 0.2198
+
+frozenset(['hard cheese']) --> frozenset(['whole milk']) confidence: 0.4108
+
+frozenset(['hamburger meat']) --> frozenset(['whole milk']) confidence: 0.4434
+
+frozenset(['beef']) --> frozenset(['yogurt']) confidence: 0.2229
+
+frozenset(['chicken']) --> frozenset(['whole milk']) confidence: 0.4100
+
+frozenset(['yogurt']) --> frozenset(['rolls/buns']) confidence: 0.2464
+
+frozenset(['tropical fruit']) --> frozenset(['whole milk']) confidence: 0.4031
+
+frozenset(['chocolate']) --> frozenset(['rolls/buns']) confidence: 0.2377
+
+frozenset(['pastry']) --> frozenset(['other vegetables']) confidence: 0.2537
+
+frozenset(['whipped/sour cream']) --> frozenset(['other vegetables']) confidence: 0.4028
+
+frozenset(['bottled water']) --> frozenset(['yogurt']) confidence: 0.2079
+
+frozenset(['cream cheese ']) --> frozenset(['yogurt']) confidence: 0.3251
+
+frozenset(['chocolate']) --> frozenset(['whole milk']) confidence: 0.3361
+
+frozenset(['yogurt']) --> frozenset(['tropical fruit']) confidence: 0.2099
+
+frozenset(['butter']) --> frozenset(['other vegetables']) confidence: 0.3615
+
+frozenset(['whipped/sour cream']) --> frozenset(['whole milk']) confidence: 0.4496
+
+frozenset(['shopping bags']) --> frozenset(['soda']) confidence: 0.2497
+
+frozenset(['bottled beer']) --> frozenset(['other vegetables']) confidence: 0.2008
+
+frozenset(['curd']) --> frozenset(['yogurt']) confidence: 0.3244
+
+frozenset(['hamburger meat']) --> frozenset(['other vegetables']) confidence: 0.4159
+
+frozenset(['beef']) --> frozenset(['rolls/buns']) confidence: 0.2597
+
+frozenset(['berries']) --> frozenset(['whole milk']) confidence: 0.3547
+
+frozenset(['napkins']) --> frozenset(['other vegetables']) confidence: 0.2757
+
+frozenset(['margarine']) --> frozenset(['other vegetables']) confidence: 0.3368
+
+frozenset(['chicken']) --> frozenset(['other vegetables']) confidence: 0.4171
+
+frozenset(['cream cheese ']) --> frozenset(['other vegetables']) confidence: 0.3525
+
+frozenset(['ham']) --> frozenset(['whole milk']) confidence: 0.4414
+
+frozenset(['citrus fruit']) --> frozenset(['whole milk']) confidence: 0.3686
+
+frozenset(['napkins']) --> frozenset(['whole milk']) confidence: 0.3767
+
+frozenset(['sausage']) --> frozenset(['whole milk']) confidence: 0.3182
+
+frozenset(['soda']) --> frozenset(['whole milk']) confidence: 0.2297
+
+frozenset(['pastry']) --> frozenset(['whole milk']) confidence: 0.3737
+
+frozenset(['dessert']) --> frozenset(['other vegetables']) confidence: 0.3123
+
+frozenset(['bottled water']) --> frozenset(['whole milk']) confidence: 0.3109
+
+frozenset(['curd']) --> frozenset(['whole milk']) confidence: 0.4905
+
+frozenset(['whole milk']) --> frozenset(['yogurt']) confidence: 0.2193
+
+frozenset(['rolls/buns']) --> frozenset(['whole milk']) confidence: 0.3079
+
+frozenset(['domestic eggs']) --> frozenset(['root vegetables']) confidence: 0.2260
+
+frozenset(['white bread']) --> frozenset(['whole milk']) confidence: 0.4058
+
+frozenset(['pip fruit']) --> frozenset(['tropical fruit']) confidence: 0.2702
+
+frozenset(['napkins']) --> frozenset(['soda']) confidence: 0.2291
+
+frozenset(['pip fruit']) --> frozenset(['root vegetables']) confidence: 0.2056
+
+frozenset(['margarine']) --> frozenset(['rolls/buns']) confidence: 0.2517
+
+frozenset(['whipped/sour cream']) --> frozenset(['yogurt']) confidence: 0.2894
+
+frozenset(['pork']) --> frozenset(['root vegetables']) confidence: 0.2363
+
+frozenset(['fruit/vegetable juice']) --> frozenset(['rolls/buns']) confidence: 0.2011
+
+frozenset(['oil']) --> frozenset(['whole milk']) confidence: 0.4022
+
+frozenset(['rolls/buns']) --> frozenset(['soda']) confidence: 0.2084
+
+frozenset(['root vegetables']) --> frozenset(['other vegetables']) confidence: 0.4347
+
+frozenset(['frankfurter']) --> frozenset(['whole milk']) confidence: 0.3483
+
+frozenset(['sugar']) --> frozenset(['whole milk']) confidence: 0.4444
+
+frozenset(['frozen vegetables']) --> frozenset(['other vegetables']) confidence: 0.3700
+
+frozenset(['sausage']) --> frozenset(['yogurt']) confidence: 0.2089
+
+frozenset(['pastry']) --> frozenset(['soda']) confidence: 0.2366
+
+frozenset(['other vegetables']) --> frozenset(['whole milk']) confidence: 0.3868
+
+frozenset(['berries']) --> frozenset(['other vegetables']) confidence: 0.3089
+
+frozenset(['butter']) --> frozenset(['rolls/buns']) confidence: 0.2422
+
+frozenset(['chocolate']) --> frozenset(['soda']) confidence: 0.2725
+
+frozenset(['sausage']) --> frozenset(['rolls/buns']) confidence: 0.3258
+
+frozenset(['fruit/vegetable juice']) --> frozenset(['whole milk']) confidence: 0.3685
+
+frozenset(['shopping bags']) --> frozenset(['whole milk']) confidence: 0.2487
+
+frozenset(['cream cheese ']) --> frozenset(['whole milk']) confidence: 0.4262
+
+frozenset(['bottled beer']) --> frozenset(['whole milk']) confidence: 0.2538
+
+frozenset(['butter milk']) --> frozenset(['other vegetables']) confidence: 0.3709
+
+frozenset(['sugar']) --> frozenset(['other vegetables']) confidence: 0.3183
+
+frozenset(['citrus fruit']) --> frozenset(['tropical fruit']) confidence: 0.2408
+
+frozenset(['margarine']) --> frozenset(['yogurt']) confidence: 0.2431
+
+frozenset(['root vegetables']) --> frozenset(['yogurt']) confidence: 0.2369
+
+frozenset(['tropical fruit']) --> frozenset(['rolls/buns']) confidence: 0.2345
+
+frozenset(['berries']) --> frozenset(['yogurt']) confidence: 0.3180
+
+frozenset(['bottled water']) --> frozenset(['other vegetables']) confidence: 0.2245
+
+frozenset(['domestic eggs']) --> frozenset(['other vegetables']) confidence: 0.3510
+
+frozenset(['pork']) --> frozenset(['whole milk']) confidence: 0.3845
+
+frozenset(['chocolate']) --> frozenset(['other vegetables']) confidence: 0.2561
+
+frozenset(['pip fruit']) --> frozenset(['whole milk']) confidence: 0.3978
+
+frozenset(['yogurt']) --> frozenset(['other vegetables']) confidence: 0.3112
+
+frozenset(['onions']) --> frozenset(['whole milk']) confidence: 0.3902
+
+frozenset(['dessert']) --> frozenset(['whole milk']) confidence: 0.3699
+
+frozenset(['fruit/vegetable juice']) --> frozenset(['other vegetables']) confidence: 0.2911
+
+frozenset(['frozen vegetables']) --> frozenset(['whole milk']) confidence: 0.4249
+
+frozenset(['rolls/buns']) --> frozenset(['other vegetables']) confidence: 0.2316
+
+frozenset(['sliced cheese']) --> frozenset(['whole milk']) confidence: 0.4398
+
+frozenset(['bottled beer']) --> frozenset(['soda']) confidence: 0.2109
+
+frozenset(['citrus fruit']) --> frozenset(['yogurt']) confidence: 0.2617
+
+frozenset(['domestic eggs']) --> frozenset(['yogurt']) confidence: 0.2260
+
+frozenset(['domestic eggs']) --> frozenset(['rolls/buns']) confidence: 0.2468
+
+frozenset(['butter']) --> frozenset(['yogurt']) confidence: 0.2642
+
+frozenset(['citrus fruit']) --> frozenset(['rolls/buns']) confidence: 0.2027
+
+frozenset(['waffles']) --> frozenset(['whole milk']) confidence: 0.3307
+
+frozenset(['pork']) --> frozenset(['other vegetables']) confidence: 0.3757
+
+frozenset(['tropical fruit']) --> frozenset(['other vegetables']) confidence: 0.3421
+
+frozenset(['hygiene articles']) --> frozenset(['whole milk']) confidence: 0.3889
+
+frozenset(['yogurt']) --> frozenset(['whole milk']) confidence: 0.4016
+
+frozenset(['bottled water']) --> frozenset(['rolls/buns']) confidence: 0.2190
+
+frozenset(['sausage']) --> frozenset(['soda']) confidence: 0.2587
+
+frozenset(['newspapers']) --> frozenset(['whole milk']) confidence: 0.3427
+
+frozenset(['salty snack']) --> frozenset(['other vegetables']) confidence: 0.2849
+
+frozenset(['whipped/sour cream']) --> frozenset(['root vegetables']) confidence: 0.2383
+
+frozenset(['margarine']) --> frozenset(['whole milk']) confidence: 0.4132
+
+frozenset(['onions']) --> frozenset(['other vegetables']) confidence: 0.4590
+
+frozenset(['white bread']) --> frozenset(['soda']) confidence: 0.2440
+
+frozenset(['tropical fruit']) --> frozenset(['yogurt']) confidence: 0.2791
+
+frozenset(['frankfurter']) --> frozenset(['rolls/buns']) confidence: 0.3259
+
+frozenset(['pip fruit']) --> frozenset(['other vegetables']) confidence: 0.3454
+
+frozenset(['tropical fruit']) --> frozenset(['root vegetables']) confidence: 0.2006
+
+frozenset(['fruit/vegetable juice']) --> frozenset(['yogurt']) confidence: 0.2588
+
+frozenset(['other vegetables']) --> frozenset(['yogurt']) confidence: 0.2244
+
+frozenset(['brown bread']) --> frozenset(['yogurt']) confidence: 0.2241
+
+frozenset(['fruit/vegetable juice']) --> frozenset(['soda']) confidence: 0.2546
+
+frozenset(['napkins']) --> frozenset(['yogurt']) confidence: 0.2350
+
+frozenset(['coffee']) --> frozenset(['other vegetables']) confidence: 0.2312
+
+frozenset(['butter milk']) --> frozenset(['whole milk']) confidence: 0.4145
+
+frozenset(['long life bakery product']) --> frozenset(['other vegetables']) confidence: 0.2853
+
+frozenset(['shopping bags']) --> frozenset(['other vegetables']) confidence: 0.2353
+
+frozenset(['root vegetables']) --> frozenset(['rolls/buns']) confidence: 0.2229
+
+frozenset(['long life bakery product']) --> frozenset(['whole milk']) confidence: 0.3614
+
+frozenset(['domestic eggs']) --> frozenset(['whole milk']) confidence: 0.4728
+
+frozenset(['frankfurter']) --> frozenset(['other vegetables']) confidence: 0.2793
+
+frozenset(['pastry']) --> frozenset(['rolls/buns']) confidence: 0.2354
+
+frozenset(['curd']) --> frozenset(['root vegetables']) confidence: 0.2042
+
+frozenset(['frozen vegetables']) --> frozenset(['rolls/buns']) confidence: 0.2114
+
+frozenset(['butter']) --> frozenset(['root vegetables']) confidence: 0.2330
+
+frozenset(['chicken']) --> frozenset(['root vegetables']) confidence: 0.2536
+
+frozenset(['waffles']) --> frozenset(['other vegetables']) confidence: 0.2619
+
+frozenset(['bottled water']) --> frozenset(['soda']) confidence: 0.2622
+
+frozenset(['whole milk']) --> frozenset(['other vegetables']) confidence: 0.2929
+
+frozenset(['newspapers']) --> frozenset(['rolls/buns']) confidence: 0.2471
+
+frozenset(['citrus fruit']) --> frozenset(['root vegetables']) confidence: 0.2138
+
+frozenset(['pip fruit']) --> frozenset(['yogurt']) confidence: 0.2379
+
+frozenset(['brown bread']) --> frozenset(['whole milk']) confidence: 0.3887
+
+frozenset(['frozen vegetables']) --> frozenset(['root vegetables']) confidence: 0.2410
+
+frozenset(['coffee']) --> frozenset(['whole milk']) confidence: 0.3222
